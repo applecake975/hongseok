@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp-dynamic-subset.min.css");
+
+:root {
+    /* font color */
+    --main_font_color: #CD191E;
+
+    --main_sub_color: #0054A6;
+
+    --white_text_color: #fff;
+    --main_text_color: #111;
+    --secondary_text__color: #505050;
+    --tertiary_text_color: #767676;
+    --disabled_text_color: #999999;
+
+    /* backgroundcolor */
+    --main_background_color: #CD191E;
+    --main_sub_background_color: #0054A6;
+    --white_background_color: #fff;
+    --secondary_background_color: #f1f1f5;
+    --tertiary_background_color: #e5e5ec;
+    /* font weight */
+    --font_Regular: 400;
+    --font_Medium: 500;
+    --font_SemiBold: 600;
+}
+
+body {
+    font-family: "Pretendard JP Variable", "Pretendard JP";
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5ec;
+}
+
+header .inner .logo {
+    font-size: 28px;
+
+}
+
+
+
+
+header .inner {
+    padding: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+header .inner ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header .inner ul li {
+    padding-right: 20px;
+
+}
+
+
+
+
+
+
+
+nav .inner {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-weight: 600;
+
+}
+
+nav .inner ul {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+}
+
+nav .inner ul li:first-child {
+    list-style: circle;
+}
+
+
+
+
+nav .inner ul li {
+    padding: 12px 16px;
+    font-size: 16px;
+    white-space: nowrap;
+    color: #505050;
+    font-weight: 500;
+    line-height: 150%;
+
+
+}
+
+nav .inner ul li:first-child {
+    color: #111;
+    font-weight: 600;
+
+}
+
+nav .inner ul li:last-child {
+    border-radius: 8px;
+    background: #CD191E;
+    box-shadow: 0 1px 2px 0 rgba(17, 17, 17, 0.25);
+    color: #fff;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #e5e5ec;
+}
+
+
+
+footer .sns {
+    max-width: 1840px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 32px 90px 32px;
+}
+
+footer .sns .logo {
+    font-size: 28px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+footer {
+    line-height: 140%;
+}
+
+footer .text_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 36px;
+}
+
+footer .maruka {
+    display: flex;
+    justify-content: center;
+}
