@@ -43,7 +43,7 @@ main {
 
 }
 .banner_contents img{
-    width: 500px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -186,6 +186,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 16px;
+
 
 }
 
