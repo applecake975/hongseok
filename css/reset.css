@@ -144,3 +144,7 @@ a {
 * {
     box-sizing: border-box;
 }
+
+button{
+  all: unset;
+  cursor: pointer;}
