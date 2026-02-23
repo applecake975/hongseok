@@ -7,44 +7,44 @@ main {
 }
 
 .main_visual {
-    height: 600px;
-
-}
-
-.banner_item {
-    position: relative;
     width: 100%;
-    height: 600px;
-    background: url("/img/banner/peyoung_sukiyaki_bg_1920x600.png") center/cover no-repeat;
+    min-height:600px;
     display: flex;
+    background-image: url(/img/banner/peyoung_sukiyaki_bg_1920x600.png);
+    justify-content: center;
+
+    
+}
+.banner_contents{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 240px;
-}
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+ 
 
-.banner_content {
-    max-width: 520px;
+}
+.banner_textbox{
+    max-width: 600px;
+    padding-left:50px;
+
+}
+.banner_title{
+    font-size:38px;
     color: var(--white_text_color);
-
-}
-
-.banner_title {
-    font-size: 38px;
     line-height: 140%;
-    margin: 12px 0 48px;
+    padding-bottom: 50px;
 }
-
-.banner_button a {
-    padding: 16px 24px;
-    gap: 2px;
+.banner_button a{
+    color: var(--white_text_color);
+    padding: 16px 32px;
+    background-color: var(--main_background_color);
     border-radius: 8px;
-    background: var(--main_background_color);
+
 }
-
-.banner_img img {
-    width: 420px;
+.banner_contents img{
+    width: 500px;
     height: auto;
-
 }
 
 .top3_wrap {

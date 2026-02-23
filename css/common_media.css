@@ -6,7 +6,7 @@
         flex-direction: row;
         gap: 56px;
     }
-
+    
     .top1 {
         background-color: var(--white_background_color);
         width: 100%;
