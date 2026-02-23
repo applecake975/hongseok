@@ -116,6 +116,46 @@ nav .inner ul li:last-child {
     box-shadow: 0 1px 2px 0 rgba(17, 17, 17, 0.25);
     color: #fff;
 }
+/* floating buttons */
+.floating_buttons {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 100;
+}
+
+.floating_buttons .buy {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(137deg, rgba(205, 25, 30, 0.50) -163.9%, rgba(205, 25, 30, 0.80) -92.92%, #CD191E 76.17%);
+    box-shadow: 0 1px 3px 0 rgba(205, 25, 30, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--white_text_color);
+}
+
+.floating_buttons .top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(128deg, rgba(0, 84, 166, 0.50) -159.8%, rgba(0, 84, 166, 0.80) -86.84%, #0054A6 81.88%);
+    box-shadow: 0 1px 3px 0 rgba(1, 84, 166, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--white_text_color);
+}
 
 /* footer */
 footer {
