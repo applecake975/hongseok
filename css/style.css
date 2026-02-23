@@ -550,6 +550,7 @@ main {
 
 .special .inner ul {
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .special .inner ul li {
