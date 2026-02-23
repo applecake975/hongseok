@@ -135,13 +135,9 @@ main {
     height: 600px;
 }
 
-/* 배경 */
+
 .banner_item--01 {
     background: url("/img/banner/peyoung_sukiyaki_bg_1920x600.png") center/cover no-repeat;
-}
-
-/* 좌우 배치 */
-.banner_item--01 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -365,8 +361,8 @@ main {
 }
 
 .top2 img {
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
 }
 
 .top3 {
@@ -413,8 +409,8 @@ main {
 }
 
 .top3 img {
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
 }
 
 .top3:hover {
@@ -436,8 +432,8 @@ main {
 }
 
 .recipe .inner img {
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
 }
 
 
@@ -552,6 +548,10 @@ main {
     color: var(--secondary_text__color);
 }
 
+.special .inner ul {
+    flex-wrap: wrap;
+}
+
 .special .inner ul li {
     width: 336px;
     height: 336px;
@@ -561,18 +561,20 @@ main {
 }
 
 
-.special .inner ul li h3{
+.special .inner ul li h3 {
     font-size: 28px;
     font-weight: var(--font_Regular);
     line-height: 140%;
 }
-.special .inner ul li p{
+
+.special .inner ul li p {
     font-size: 16px;
     font-weight: var(--font_Regular);
     color: var(--secondary_text__color);
     line-height: 150%;
     padding: 16px 0px 56px 0;
 }
+
 
 
 /* footer */
