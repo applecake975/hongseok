@@ -455,5 +455,7 @@ main {
     padding: 16px 0px 56px 0;
 }
 
-
-
+.more_button{
+    color: var(--main_font_color);
+font-weight: var(--font_SemiBold);
+}
