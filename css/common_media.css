@@ -1,0 +1,602 @@
+﻿@charset "utf-8";
+
+@media screen and (max-width: 800px) {
+    .wrap {
+        overflow: hidden;
+    }
+
+    header .inner {
+        padding: 14px 16px;
+        align-items: center;
+    }
+
+    header .inner .logo {
+        font-size: 24px;
+    }
+
+    header .inner ul {
+        gap: 12px;
+    }
+
+    header .inner ul li {
+        padding-right: 0;
+    }
+
+    nav .inner {
+        justify-content: flex-start;
+        padding: 10px 12px;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    nav .inner::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav .inner ul {
+        gap: 8px;
+        width: max-content;
+    }
+
+    nav .inner ul li {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    .main_visual {
+        height: auto;
+    }
+
+    .banner_item {
+        height: auto;
+    }
+
+    .banner_item--01 {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 44px 24px 56px;
+        background-position: center;
+    }
+
+    .banner_content {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .banner_title {
+        font-size: 42px;
+        line-height: 1.32;
+        margin: 0 0 28px;
+    }
+
+    .banner_button a {
+        display: inline-flex;
+        align-items: center;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .banner_img {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner_img img {
+        width: min(44vw, 220px);
+    }
+
+    .top3_wrap {
+        padding: 28px 0 36px;
+    }
+
+    .top3_wrap .inner {
+        max-width: 100%;
+    }
+
+    .top3_wrap .title {
+        padding: 0 16px;
+        align-items: center;
+    }
+
+    .top3_wrap .title h2 {
+        font-size: 36px;
+    }
+
+    .top3_wrap .title span {
+        font-size: 13px;
+    }
+
+    .top3_wrap .inner nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 18px 16px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .top3_wrap .inner nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .top3_wrap .inner nav ul {
+        width: max-content;
+        gap: 8px;
+    }
+
+    .top3_wrap .inner nav ul li {
+        font-size: 13px;
+        padding: 9px 14px;
+    }
+
+    .top3_wrap .inner {
+        padding: 0 10px;
+    }
+
+    .contents {
+        gap: 12px;
+    }
+
+    .top1,
+    .top2,
+    .top3 {
+        height: auto;
+        min-height: 220px;
+        border-radius: 14px;
+        padding: 22px 20px;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .top1 {
+        display: grid;
+        grid-template-columns: 1fr 112px;
+    }
+
+    .top2,
+    .top3 {
+        display: grid;
+        grid-template-columns: 1fr 92px;
+    }
+
+    .top1 img,
+    .top2 img,
+    .top3 img {
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .top1 .textbox h3,
+    .top2 .textbox h3,
+    .top3 .textbox h3 {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .top1 .textbox h2,
+    .top2 .textbox h2,
+    .top3 .textbox h2 {
+        font-size: 24px;
+        line-height: 1.35;
+        padding: 8px 0 10px;
+    }
+
+    .top1 .textbox p,
+    .top2 .textbox p,
+    .top3 .textbox p {
+        font-size: 13px;
+        line-height: 1.55;
+        padding-bottom: 14px;
+    }
+
+    .top1 .textbox .button a {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .top2 .textbox a,
+    .top3 .textbox a {
+        font-size: 13px;
+    }
+
+    .others {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .recipe {
+        padding: 42px 0;
+    }
+
+    .recipe .inner {
+        flex-direction: column;
+        gap: 22px;
+        padding: 0 10px;
+    }
+
+    .recipe .inner img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .recipe_title {
+        font-size: 36px;
+        line-height: 1.35;
+    }
+
+    .recipe_text {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 14px 0 20px;
+    }
+
+    .recipe .button a {
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .special {
+        padding: 28px 0 36px;
+    }
+
+    .special .title {
+        padding: 0 16px;
+        align-items: center;
+    }
+
+    .special .title h2 {
+        font-size: 38px;
+    }
+
+    .special .title span {
+        font-size: 13px;
+    }
+
+    .special .inner ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .special .inner ul li {
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        border-radius: 12px;
+        padding: 18px 16px;
+    }
+
+    .special .inner ul li h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .special .inner ul li p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .special .inner ul li .more {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 13px;
+    }
+
+    .floating_buttons {
+        right: 12px;
+        bottom: 12px;
+        gap: 8px;
+    }
+
+    .floating_buttons .buy,
+    .floating_buttons .top {
+        width: 58px;
+        height: 58px;
+        font-size: 13px;
+    }
+
+    footer .sns {
+        padding: 24px 16px 32px;
+        gap: 16px;
+    }
+
+    footer .sns .logo {
+        font-size: 24px;
+    }
+
+    footer .sns ul {
+        gap: 14px;
+    }
+
+    footer .sns ul img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .text_content {
+        padding: 0 16px 18px;
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    footer .maruka {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header .inner {
+        padding: 10px 12px;
+    }
+
+    header .inner .logo {
+        font-size: 20px;
+    }
+
+    header .inner ul {
+        gap: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner_item--01 {
+        gap: 20px;
+        padding: 36px 12px 42px;
+    }
+
+    .banner_img img {
+        width: 126px;
+    }
+
+    .banner_title {
+        font-size: 40px;
+        line-height: 1.35;
+        margin: 0 0 22px;
+    }
+
+    .banner_button a {
+        min-width: 128px;
+        justify-content: center;
+        padding: 11px 16px;
+        font-size: 12px;
+    }
+
+    .top3_wrap {
+        padding: 18px 0 28px;
+    }
+
+    .top3_wrap .title {
+        padding: 0 8px;
+    }
+
+    .top3_wrap .title h2 {
+        font-size: 30px;
+    }
+
+    .top3_wrap .title span,
+    .top3_wrap .title i {
+        font-size: 11px;
+    }
+
+    .top3_wrap .inner nav {
+        padding: 14px 8px;
+    }
+
+    .top3_wrap .inner nav ul li {
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+
+    .top3_wrap .inner {
+        padding: 0 6px;
+    }
+
+    .contents {
+        gap: 10px;
+    }
+
+    .top1,
+    .top2,
+    .top3 {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        padding: 12px 10px 10px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+
+    .top1 img,
+    .top2 img,
+    .top3 img {
+        width: 84px;
+        margin: 0 auto;
+    }
+
+    .top1 .textbox,
+    .top2 .textbox,
+    .top3 .textbox {
+        width: 100%;
+    }
+
+    .top1 .textbox h3,
+    .top2 .textbox h3,
+    .top3 .textbox h3 {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .top1 .textbox h2,
+    .top2 .textbox h2,
+    .top3 .textbox h2 {
+        font-size: 20px;
+        line-height: 1.35;
+        padding: 8px 0;
+        word-break: keep-all;
+    }
+
+    .top1 .textbox p,
+    .top2 .textbox p,
+    .top3 .textbox p {
+        font-size: 10px;
+        line-height: 1.5;
+        padding-bottom: 10px;
+    }
+
+    .top1 .textbox .button a,
+    .top2 .textbox a,
+    .top3 .textbox a {
+        width: 100%;
+        min-height: 34px;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--main_background_color);
+        color: var(--white_text_color);
+        font-size: 11px;
+        font-weight: var(--font_SemiBold);
+        padding: 8px 12px;
+    }
+
+    .others {
+        gap: 10px;
+    }
+
+    .recipe {
+        padding: 24px 0;
+    }
+
+    .recipe .inner {
+        gap: 12px;
+        padding: 0 6px;
+    }
+
+    .recipe .inner img {
+        border-radius: 10px;
+    }
+
+    .recipe_title {
+        font-size: 38px;
+    }
+
+    .recipe_text {
+        font-size: 11px;
+        padding: 10px 0 14px;
+    }
+
+    .recipe .button a {
+        width: 100%;
+        justify-content: center;
+        font-size: 11px;
+        padding: 10px 14px;
+    }
+
+    .special {
+        padding: 20px 0 30px;
+    }
+
+    .special .title {
+        padding: 0 8px;
+    }
+
+    .special .title h2 {
+        font-size: 28px;
+    }
+
+    .special .title span,
+    .special .title i {
+        font-size: 11px;
+    }
+
+    .special .inner ul {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 0 6px;
+    }
+
+    .special .inner ul li {
+        min-height: 140px;
+        border-radius: 10px;
+        padding: 14px 12px;
+    }
+
+    .special .inner ul li h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .special .inner ul li p {
+        font-size: 10px;
+    }
+
+    .special .inner ul li .more {
+        margin-top: 10px;
+        font-size: 11px;
+        color: var(--main_font_color);
+        font-weight: var(--font_SemiBold);
+    }
+
+    .floating_buttons {
+        right: 8px;
+        bottom: 86px;
+        gap: 6px;
+    }
+
+    .floating_buttons .buy,
+    .floating_buttons .top {
+        width: 42px;
+        height: 42px;
+        font-size: 10px;
+    }
+
+    footer .sns {
+        padding: 18px 10px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    footer .sns .logo {
+        font-size: 20px;
+    }
+
+    footer .sns ul {
+        gap: 12px;
+    }
+
+    footer .sns ul img {
+        width: 28px;
+        height: 28px;
+    }
+
+    footer .text_content {
+        padding: 0 10px 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    footer .maruka {
+        justify-content: flex-start;
+        padding: 0 10px 18px;
+        font-size: 10px;
+    }
+}
