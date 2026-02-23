@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 @media screen and (max-width: 800px) {
     .wrap {
@@ -6,42 +6,44 @@
     }
 
     header .inner {
-        padding: 14px 16px;
-        align-items: center;
+        padding: 10px 16px;
     }
 
     header .inner .logo {
-        font-size: 24px;
+        font-size: 0;
+        width: 70px;
+        height: 20px;
+        background: #e2231a;
     }
 
     header .inner ul {
-        gap: 12px;
+        gap: 10px;
     }
 
-    header .inner ul li {
-        padding-right: 0;
-    }
-
-    nav .inner {
-        justify-content: flex-start;
-        padding: 10px 12px;
+    header nav .inner {
+        justify-content: center;
         overflow-x: auto;
+        padding: 10px 8px;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
 
-    nav .inner::-webkit-scrollbar {
+    header nav .inner::-webkit-scrollbar {
         display: none;
     }
 
-    nav .inner ul {
-        gap: 8px;
+    header nav .inner ul {
         width: max-content;
+        gap: 26px;
     }
 
-    nav .inner ul li {
-        font-size: 13px;
-        padding: 10px 12px;
+    header nav .inner ul li {
+        font-size: 10px;
+    }
+
+    header nav .inner ul li:last-child {
+        padding: 8px 12px;
+        border-radius: 6px;
     }
 
     main {
@@ -59,28 +61,8 @@
     .banner_item--01 {
         flex-direction: column;
         justify-content: flex-start;
-        gap: 24px;
-        padding: 44px 24px 56px;
-        background-position: center;
-    }
-
-    .banner_content {
-        order: 2;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .banner_title {
-        font-size: 42px;
-        line-height: 1.32;
-        margin: 0 0 28px;
-    }
-
-    .banner_button a {
-        display: inline-flex;
-        align-items: center;
-        padding: 14px 20px;
-        font-size: 14px;
+        gap: 30px;
+        padding: 52px 0 40px;
     }
 
     .banner_img {
@@ -91,34 +73,59 @@
     }
 
     .banner_img img {
-        width: min(44vw, 220px);
+        width: min(46vw, 230px);
+    }
+
+    .banner_content {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 48px;
+    }
+
+    .banner_title {
+        font-size: 46px;
+        line-height: 1.33;
+        margin: 0 0 26px;
+    }
+
+    .banner_button a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 128px;
+        font-size: 13px;
+        padding: 11px 16px;
+        border-radius: 8px;
     }
 
     .top3_wrap {
-        padding: 28px 0 36px;
+        padding: 30px 0 22px;
     }
 
     .top3_wrap .inner {
         max-width: 100%;
+        padding: 0 10px;
     }
 
     .top3_wrap .title {
-        padding: 0 16px;
+        padding: 0 6px;
         align-items: center;
     }
 
     .top3_wrap .title h2 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
-    .top3_wrap .title span {
-        font-size: 13px;
+    .top3_wrap .title span,
+    .top3_wrap .title i {
+        font-size: 12px;
     }
 
     .top3_wrap .inner nav {
-        justify-content: flex-start;
+        justify-content: center;
         overflow-x: auto;
-        padding: 18px 16px;
+        padding: 16px 6px;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
@@ -133,12 +140,8 @@
     }
 
     .top3_wrap .inner nav ul li {
-        font-size: 13px;
-        padding: 9px 14px;
-    }
-
-    .top3_wrap .inner {
-        padding: 0 10px;
+        font-size: 10px;
+        padding: 7px 12px;
     }
 
     .contents {
@@ -149,432 +152,176 @@
     .top2,
     .top3 {
         height: auto;
-        min-height: 220px;
-        border-radius: 14px;
-        padding: 22px 20px;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .top1 {
-        display: grid;
-        grid-template-columns: 1fr 112px;
-    }
-
-    .top2,
-    .top3 {
+        min-height: 0;
+        padding: 18px 14px;
+        border-radius: 12px;
         display: grid;
         grid-template-columns: 1fr 92px;
-    }
-
-    .top1 img,
-    .top2 img,
-    .top3 img {
-        width: 100%;
-        max-width: 100%;
-        align-self: center;
-    }
-
-    .top1 .textbox h3,
-    .top2 .textbox h3,
-    .top3 .textbox h3 {
-        font-size: 24px;
-        line-height: 1.1;
-    }
-
-    .top1 .textbox h2,
-    .top2 .textbox h2,
-    .top3 .textbox h2 {
-        font-size: 24px;
-        line-height: 1.35;
-        padding: 8px 0 10px;
-    }
-
-    .top1 .textbox p,
-    .top2 .textbox p,
-    .top3 .textbox p {
-        font-size: 13px;
-        line-height: 1.55;
-        padding-bottom: 14px;
-    }
-
-    .top1 .textbox .button a {
-        padding: 10px 14px;
-        font-size: 13px;
-    }
-
-    .top2 .textbox a,
-    .top3 .textbox a {
-        font-size: 13px;
-    }
-
-    .others {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .recipe {
-        padding: 42px 0;
-    }
-
-    .recipe .inner {
-        flex-direction: column;
-        gap: 22px;
-        padding: 0 10px;
-    }
-
-    .recipe .inner img {
-        max-width: 100%;
-        border-radius: 12px;
-    }
-
-    .recipe_title {
-        font-size: 36px;
-        line-height: 1.35;
-    }
-
-    .recipe_text {
-        font-size: 15px;
-        line-height: 1.6;
-        padding: 14px 0 20px;
-    }
-
-    .recipe .button a {
-        display: inline-flex;
         align-items: center;
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .special {
-        padding: 28px 0 36px;
-    }
-
-    .special .title {
-        padding: 0 16px;
-        align-items: center;
-    }
-
-    .special .title h2 {
-        font-size: 38px;
-    }
-
-    .special .title span {
-        font-size: 13px;
-    }
-
-    .special .inner ul {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        padding: 0 10px;
-    }
-
-    .special .inner ul li {
-        width: 100%;
-        height: auto;
-        min-height: 220px;
-        border-radius: 12px;
-        padding: 18px 16px;
-    }
-
-    .special .inner ul li h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .special .inner ul li p {
-        font-size: 13px;
-        line-height: 1.55;
-    }
-
-    .special .inner ul li .more {
-        display: inline-block;
-        margin-top: 16px;
-        font-size: 13px;
-    }
-
-    .floating_buttons {
-        right: 12px;
-        bottom: 12px;
-        gap: 8px;
-    }
-
-    .floating_buttons .buy,
-    .floating_buttons .top {
-        width: 58px;
-        height: 58px;
-        font-size: 13px;
-    }
-
-    footer .sns {
-        padding: 24px 16px 32px;
-        gap: 16px;
-    }
-
-    footer .sns .logo {
-        font-size: 24px;
-    }
-
-    footer .sns ul {
         gap: 14px;
     }
 
-    footer .sns ul img {
-        width: 30px;
-        height: 30px;
-    }
-
-    footer .text_content {
-        padding: 0 16px 18px;
-        gap: 12px;
-        flex-wrap: wrap;
-        font-size: 13px;
-    }
-
-    footer .maruka {
-        padding-bottom: 20px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    header .inner {
-        padding: 10px 12px;
-    }
-
-    header .inner .logo {
-        font-size: 20px;
-    }
-
-    header .inner ul {
-        gap: 10px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .banner_item--01 {
-        gap: 20px;
-        padding: 36px 12px 42px;
-    }
-
-    .banner_img img {
-        width: 126px;
-    }
-
-    .banner_title {
-        font-size: 40px;
-        line-height: 1.35;
-        margin: 0 0 22px;
-    }
-
-    .banner_button a {
-        min-width: 128px;
-        justify-content: center;
-        padding: 11px 16px;
-        font-size: 12px;
-    }
-
-    .top3_wrap {
-        padding: 18px 0 28px;
-    }
-
-    .top3_wrap .title {
-        padding: 0 8px;
-    }
-
-    .top3_wrap .title h2 {
-        font-size: 30px;
-    }
-
-    .top3_wrap .title span,
-    .top3_wrap .title i {
-        font-size: 11px;
-    }
-
-    .top3_wrap .inner nav {
-        padding: 14px 8px;
-    }
-
-    .top3_wrap .inner nav ul li {
-        padding: 7px 12px;
-        font-size: 10px;
-    }
-
-    .top3_wrap .inner {
-        padding: 0 6px;
-    }
-
-    .contents {
-        gap: 10px;
-    }
-
-    .top1,
-    .top2,
-    .top3 {
-        display: flex;
-        flex-direction: column;
-        min-height: 0;
-        padding: 12px 10px 10px;
-        border-radius: 10px;
-        gap: 10px;
-    }
-
     .top1 img,
     .top2 img,
     .top3 img {
-        width: 84px;
-        margin: 0 auto;
-    }
-
-    .top1 .textbox,
-    .top2 .textbox,
-    .top3 .textbox {
-        width: 100%;
+        width: 92px;
+        max-width: 92px;
     }
 
     .top1 .textbox h3,
     .top2 .textbox h3,
     .top3 .textbox h3 {
-        font-size: 34px;
-        line-height: 1;
+        font-size: 18px;
+        line-height: 1.2;
     }
 
     .top1 .textbox h2,
     .top2 .textbox h2,
     .top3 .textbox h2 {
         font-size: 20px;
-        line-height: 1.35;
+        line-height: 1.4;
         padding: 8px 0;
-        word-break: keep-all;
     }
 
     .top1 .textbox p,
     .top2 .textbox p,
     .top3 .textbox p {
-        font-size: 10px;
-        line-height: 1.5;
-        padding-bottom: 10px;
+        font-size: 11px;
+        line-height: 1.55;
+        padding-bottom: 12px;
+        -webkit-line-clamp: 2;
     }
 
     .top1 .textbox .button a,
     .top2 .textbox a,
     .top3 .textbox a {
-        width: 100%;
         min-height: 34px;
         border-radius: 6px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: var(--main_background_color);
-        color: var(--white_text_color);
-        font-size: 11px;
-        font-weight: var(--font_SemiBold);
         padding: 8px 12px;
+        font-size: 11px;
     }
 
     .others {
-        gap: 10px;
+        flex-direction: column;
+        gap: 12px;
     }
 
     .recipe {
-        padding: 24px 0;
+        padding: 56px 0 28px;
     }
 
     .recipe .inner {
-        gap: 12px;
-        padding: 0 6px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 14px;
+        padding: 0 10px;
     }
 
     .recipe .inner img {
-        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+
+    .recipe .textbox {
+        padding-right: 8px;
     }
 
     .recipe_title {
-        font-size: 38px;
+        font-size: 24px;
+        line-height: 1.35;
     }
 
     .recipe_text {
-        font-size: 11px;
-        padding: 10px 0 14px;
+        font-size: 12px;
+        line-height: 1.6;
+        padding: 12px 0 16px;
     }
 
     .recipe .button a {
-        width: 100%;
+        min-height: 34px;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
         justify-content: center;
         font-size: 11px;
-        padding: 10px 14px;
+        padding: 8px 12px;
     }
 
     .special {
-        padding: 20px 0 30px;
+        padding: 30px 0 38px;
     }
 
     .special .title {
-        padding: 0 8px;
+        padding: 0 10px;
+        align-items: center;
     }
 
     .special .title h2 {
-        font-size: 28px;
+        font-size: 38px;
     }
 
     .special .title span,
     .special .title i {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .special .inner ul {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 0 6px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 16px 10px 0;
     }
 
     .special .inner ul li {
-        min-height: 140px;
-        border-radius: 10px;
-        padding: 14px 12px;
+        min-height: 160px;
+        border-radius: 12px;
+        padding: 18px 14px;
     }
 
     .special .inner ul li h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
+        font-size: 32px;
+        margin-bottom: 10px;
     }
 
     .special .inner ul li p {
         font-size: 10px;
+        line-height: 1.55;
     }
 
     .special .inner ul li .more {
-        margin-top: 10px;
+        margin-top: 14px;
         font-size: 11px;
-        color: var(--main_font_color);
-        font-weight: var(--font_SemiBold);
     }
 
     .floating_buttons {
-        right: 8px;
-        bottom: 86px;
-        gap: 6px;
+        right: 10px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        gap: 8px;
+        z-index: 120;
     }
 
     .floating_buttons .buy,
     .floating_buttons .top {
-        width: 42px;
-        height: 42px;
-        font-size: 10px;
+        width: 48px;
+        height: 48px;
+        font-size: 11px;
     }
 
     footer .sns {
-        padding: 18px 10px 18px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        padding: 22px 12px 20px;
+        align-items: center;
     }
 
     footer .sns .logo {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     footer .sns ul {
@@ -582,21 +329,60 @@
     }
 
     footer .sns ul img {
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
     }
 
     footer .text_content {
-        padding: 0 10px 14px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        padding: 0 12px 14px;
+        gap: 14px;
         font-size: 11px;
+        flex-wrap: wrap;
     }
 
     footer .maruka {
-        justify-content: flex-start;
-        padding: 0 10px 18px;
+        padding-bottom: 16px;
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner_content {
+        padding: 0 16px;
+    }
+
+    .banner_title {
+        font-size: 40px;
+    }
+
+    .top1,
+    .top2,
+    .top3 {
+        grid-template-columns: 1fr 82px;
+    }
+
+    .top1 img,
+    .top2 img,
+    .top3 img {
+        width: 82px;
+        max-width: 82px;
+    }
+
+    .recipe .inner {
+        gap: 10px;
+        padding: 0 8px;
+    }
+
+    .recipe_title {
+        font-size: 20px;
+    }
+
+    .special .inner ul {
+        gap: 10px;
+        padding: 14px 8px 0;
+    }
+
+    .special .inner ul li {
+        padding: 14px 12px;
     }
 }

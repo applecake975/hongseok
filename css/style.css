@@ -47,9 +47,12 @@ header .inner .logo {
 
 
 header .inner {
-    padding: 16px 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 
 }
@@ -57,11 +60,12 @@ header .inner {
 header .inner ul {
     display: flex;
     flex-direction: row;
+    gap: 16px;
 
 }
 
 header .inner ul li {
-    padding-right: 20px;
+    padding-right: 0;
 
 }
 
@@ -71,49 +75,74 @@ header .inner ul li {
 
 
 
-nav .inner {
+header nav .inner {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 14px 32px;
     font-weight: 600;
 
 }
 
-nav .inner ul {
+header nav .inner ul {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    align-items: center;
+    gap: 52px;
 
 }
 
-nav .inner ul li:first-child {
-    list-style: circle;
+header nav .inner ul li a {
+    color: inherit;
+}
+
+header nav .inner ul li:first-child {
+    position: relative;
+    padding-left: 10px;
+}
+
+header nav .inner ul li:first-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main_font_color);
+    transform: translateY(-50%);
 }
 
 
 
 
-nav .inner ul li {
-    padding: 12px 16px;
-    font-size: 16px;
+header nav .inner ul li {
+    padding: 0;
+    font-size: 12px;
     white-space: nowrap;
-    color: #505050;
+    color: var(--tertiary_text_color);
     font-weight: 500;
-    line-height: 150%;
+    line-height: 1.2;
 
 
 }
 
-nav .inner ul li:first-child {
-    color: #111;
+header nav .inner ul li:first-child {
+    color: var(--main_font_color);
     font-weight: 600;
 
 }
 
-nav .inner ul li:last-child {
+header nav .inner ul li:last-child {
     border-radius: 8px;
     background: #CD191E;
     box-shadow: 0 1px 2px 0 rgba(17, 17, 17, 0.25);
+    color: #fff;
+    padding: 10px 14px;
+}
+
+header nav .inner ul li:last-child a {
     color: #fff;
 }
 
@@ -220,6 +249,13 @@ main {
     padding: 24px 0;
 }
 
+.top3_wrap .inner nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
 .top3_wrap .inner nav ul li {
     font-weight: var(--font_Regular);
     color: var(--tertiary_text_color);
@@ -276,6 +312,10 @@ main {
     font-size: 32px;
     line-height: 150%;
     padding: 16px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -285,6 +325,16 @@ main {
     font-size: 20px;
     line-height: 140%;
     padding-bottom: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.top1 .textbox,
+.top2 .textbox,
+.top3 .textbox {
+    min-width: 0;
 }
 
 .top1 .textbox .button a {
@@ -339,6 +389,10 @@ main {
     font-size: 24px;
     line-height: 150%;
     padding: 16px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -348,6 +402,10 @@ main {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .top2 .textbox a {
@@ -392,6 +450,10 @@ main {
     font-size: 24px;
     line-height: 150%;
     padding: 16px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -401,6 +463,10 @@ main {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .top3 .textbox a {
