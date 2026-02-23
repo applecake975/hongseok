@@ -136,7 +136,7 @@ main {
 
 /* 배경 */
 .banner_item--01 {
-    background: url("./img/banner/peyoung_sukiyaki_bg_1920x600.png") center/cover no-repeat;
+    background: url("../img/banner/peyoung_sukiyaki_bg_1920x600.png") center/cover no-repeat;
 }
 
 /* 좌우 배치 */
