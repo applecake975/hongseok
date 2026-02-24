@@ -1,11 +1,35 @@
 ﻿@charset "utf-8";
 
 @media screen and (max-width: 800px) {
-  nav .inner ul {
+  nav {
     display: none;
   }
   .main_visual .txtbox h2 {
     font-size: 32px;
+  }
+  .main_visual .swiper li {
+    flex-direction: column-reverse;
+  }
+  .main_visual .swiper {
+    height: 650px;
+  }
+  .main_visual .txtbox .txtbox_title {
+    font-size: 16px;
+  }
+  .main_visual .txtbox h2 {
+    font-size: 24px;
+    padding: 0 0 20px 0;
+  }
+  .one_title {
+  }
+  .main_visual .txtbox .text_content {
+    display: none;
+  }
+  .top3_wrap .title h2 {
+    font-size: 24px;
+  }
+  .top3_wrap .title span {
+    font-size: 15px;
   }
   .top1 .textbox h3 {
     color: var(--tertiary_text_color);
@@ -53,7 +77,7 @@
 
   /* recipe */
   .recipe_title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: var(--font_SemiBold);
     line-height: 130%;
   }
@@ -63,7 +87,7 @@
   }
 
   .recipe_text {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: var(--font_Regular);
     color: var(--secondary_text__color);
     line-height: 150%;
@@ -79,4 +103,16 @@
     border-radius: 8px;
     cursor: pointer;
   }
+  .special .title h2 {
+    font-size: 24px;
+  }
+  .special .title span {
+    font-size: 15px;
+  }
+
+  .special .inner ul li {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
 }

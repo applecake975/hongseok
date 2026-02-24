@@ -55,7 +55,9 @@ main {
   font-weight: var(--font_SemiBold);
   padding: 16px 0 32px 0;
 }
-
+.main_visual .txtbox .one_title {
+  padding-top: 16px;
+}
 .main_visual .txtbox .text_content {
   color: var(--white_text_color);
   font-size: 20px;
@@ -116,6 +118,7 @@ main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .top3_wrap .title {
@@ -162,7 +165,11 @@ main {
   font-size: 16px;
   line-height: 150%;
 }
-
+.top3_wrap .inner nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .top3_wrap .inner nav ul li:first-child {
   font-weight: var(--font_SemiBold);
   background-color: var(--main_background_color);
@@ -428,8 +435,10 @@ main {
 .special .inner ul {
   flex-wrap: wrap;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-
 .special .inner ul li {
   width: 336px;
   height: 336px;
