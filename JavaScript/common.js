@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const swiperEl = document.querySelector(".main_visual .swiper");
   if (!swiperEl) return;
 
-  const mainSlide = new Swiper(swiperEl, {
+  new Swiper(swiperEl, {
     loop: true,
+    speed: 700,
+    updateOnWindowResize: true,
     autoplay: {
       delay: 5500,
       disableOnInteraction: false,
@@ -13,19 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
       clickable: true,
     },
   });
-
-  const toggleBtn = document.querySelector(".btn_box i");
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", function () {
-      if (mainSlide.autoplay.running) {
-        mainSlide.autoplay.stop();
-        this.classList.remove("fa-pause");
-        this.classList.add("fa-play");
-      } else {
-        mainSlide.autoplay.start();
-        this.classList.remove("fa-play");
-        this.classList.add("fa-pause");
-      }
-    });
-  }
 });

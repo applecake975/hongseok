@@ -9,7 +9,6 @@
     <title>Peyoung</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <!-- AOS나 gsap 둘 중 하나 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -30,15 +29,20 @@
     <script src="javascript/common.js"></script>
   </head>
 
-  <body>
+  <body id="top">
     <aside class="floating_buttons">
-      <a href="#" class="float_btn buy">購入へ</a>
+      <a
+        href="https://www.amazon.co.jp/Yakisoba-Noodles-%E3%83%9A%E3%83%A4%E3%83%B3%E3%82%B0-Pasta/s?rh=n%3A2146604051%2Cp_89%3A%25E3%2583%259A%25E3%2583%25A4%25E3%2583%25B3%25E3%2582%25B0&language=en"
+        target="_blank"
+        class="float_btn buy"
+        >購入へ</a
+      >
       <a href="#" class="float_btn top">TOPへ</a>
     </aside>
     <div class="wrap">
       <header>
         <div class="inner">
-          <h1 class="logo"><a href="#">peyoung</a></h1>
+          <h1 class="logo"><a href="index.html">peyoung</a></h1>
           <ul>
             <li>
               <a href="#"
@@ -71,7 +75,7 @@
       </header>
 
       <main>
-        <div class="main_visual">
+        <div class="main_visual" id="home">
           <div class="swiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide slide1">
@@ -113,7 +117,6 @@
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
-                <!-- //.txtbox -->
                 <img
                   class="product_img"
                   src="img/product/main_yakisoba.png"
@@ -131,7 +134,6 @@
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
-                <!-- //.txtbox -->
                 <img
                   class="product_img"
                   src="img/product/main_goku-gekikara-donki.png"
@@ -148,7 +150,6 @@
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
-                <!-- //.txtbox -->
                 <img
                   class="product_img"
                   src="img/product/main_sio-yakisoba.png"
@@ -165,7 +166,6 @@
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
-                <!-- //.txtbox -->
                 <img
                   class="product_img"
                   src="img/product/main_cho-oomori.png"
@@ -179,7 +179,7 @@
         </div>
         <!-- //.main_visual -->
 
-        <section class="top3_wrap">
+        <section class="top3_wrap" id="products">
           <div class="inner">
             <div class="title">
               <h2>TOP3</h2>
@@ -279,7 +279,7 @@
             </div>
           </div>
         </section>
-        <section class="special">
+        <section class="special" id="special">
           <div class="inner">
             <div class="title">
               <h2>Special</h2>
@@ -338,14 +338,37 @@
         </section>
       </main>
 
-      <footer>
+      <footer id="footer">
         <div class="sns">
           <div class="logo"><a href="#">peyoung</a></div>
           <ul>
-            <li><img src="img/icons/facebook.png" alt="" /><a href=""></a></li>
-            <li><img src="img/icons/x.png" alt="" /><a href=""></a></li>
-            <li><img src="img/icons/line.png" alt="" /><a href=""></a></li>
-            <li><img src="img/icons/insta.png" alt="" /><a href=""></a></li>
+            <li>
+              <a
+                href="https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1446101138%26state%3Dc0621f068cebe1cfa149e19e3b395e%26redirect_uri%3Dhttps%253A%252F%252Fsocial-plugins.line.me%252Flineit%252FloginCallback%253FreturnUrl%253Dhttps%25253A%25252F%25252Fsocial-plugins.line.me%25252Flineit%25252Fshare%25253Furl%25253Dhttps%25253A%25252F%25252Fwww.peyoung.co.jp%25252Fpeyoung%25252F%26scope%3Dopenid%2520profile%2520friends%2520groups%2520timeline.post%2520message.write&loginChannelId=1446101138&loginState=yftoMq7b811QyTJ8Fqj8v0#/"
+                target="_blank"
+              >
+                <img src="img/icons/line.png" alt="line_icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/peyoung.ceo/" target="_blank">
+                <img src="img/icons/insta.png" alt="insta_icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/peyoungpr" target="_blank">
+                <img src="img/icons/x.png" alt="x_icon" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/share.php?u=https://www.peyoung.co.jp/peyoung/"
+                target="_blank"
+              >
+                <img src="img/icons/facebook.png" alt="facebook_icon" />
+              </a>
+            </li>
           </ul>
         </div>
         <div class="text_content">
